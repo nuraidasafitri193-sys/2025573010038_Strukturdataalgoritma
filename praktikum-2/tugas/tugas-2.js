@@ -1,10 +1,8 @@
-const beratBadan = 75; // kg
-const tinggiBadan = 1.50; // meter
+const beratBadan = 75; 
+const tinggiBadan = 1.50; 
 
-// Hitung BMI
 let bmi = beratBadan / (tinggiBadan * tinggiBadan);
 
-// Tentukan kategori
 let kategori;
 
 if (bmi < 18.5) {
@@ -17,8 +15,6 @@ if (bmi < 18.5) {
   kategori = "Obesitas (Obese)";
 }
 
-// Console log hasil akhir
 console.log("Berat:", beratBadan, "kg | Tinggi:", tinggiBadan, "m | BMI:", bmi.toFixed(2), "| Kategori:", kategori);
 
-// Alternatif pakai template string (lebih rapi)
 console.log(`Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} m | BMI: ${bmi.toFixed(2)} | Kategori: ${kategori}`);
