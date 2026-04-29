@@ -20,8 +20,6 @@ class Kendaraan {
         return `${this.tahun} ${this.merek} ${this.model}`;
     }
 }
-
-
 class Mobil extends Kendaraan {
     constructor(merek, model, tahun, jumlahPintu) {
         super(merek, model, tahun);
@@ -37,8 +35,6 @@ class Mobil extends Kendaraan {
         return `${infoParent} (${this.jumlahPintu} pintu)`;
     }
 }
-
-
 class Motor extends Kendaraan {
     constructor(merek, model, tahun, jenisMotor) {
         super(merek, model, tahun);
@@ -57,8 +53,6 @@ class Motor extends Kendaraan {
         return `${super.info()} [${this.jenisMotor}]`;
     }
 }
-
-
 const mobil = new Mobil("Toyota", "Avanza", 2022, 4);
 const motor = new Motor("Honda", "CBR600RR", 2021, "sport");
 
@@ -82,10 +76,7 @@ console.log("\n=== Polymorphism ===");
 const semuaKendaraan = [mobil, motor];
 semuaKendaraan.forEach(k => console.log(k.info()));
 
-
-// ================= HEWAN =================
-
-console.log("\n=== Hierarki Class Hewan ===");
+console.log("\n===latihan 4. Hierarki Class Hewan ===");
 
 class Hewan {
     constructor(nama, suara) {
@@ -101,7 +92,6 @@ class Hewan {
         console.log(`Nama Hewan: ${this.nama}`);
     }
 }
-
 class Anjing extends Hewan {
     constructor(nama) {
         super(nama, "Guk guk");
@@ -115,7 +105,6 @@ class Anjing extends Hewan {
         console.log(`Nama Hewan: ${this.nama} (jenis: anjing)`);
     }
 }
-
 class Kucing extends Hewan {
     constructor(nama) {
         super(nama, "Meong");
@@ -130,7 +119,6 @@ class Kucing extends Hewan {
         console.log("Purrr...");
     }
 }
-
 const anjing1 = new Anjing("Buddy");
 const anjing2 = new Anjing("Max");
 const kucing1 = new Kucing("Kitty");

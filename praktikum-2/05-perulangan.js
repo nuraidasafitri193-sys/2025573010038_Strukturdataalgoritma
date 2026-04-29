@@ -25,11 +25,11 @@ console.log('\n=== Break dan Continue ===');
 for (let i = 1; i <= 10; i++) {
 if (i === 4) {
 console.log(`Melewati angka ${i} (continue)`);
-continue; // lewati angka 4, lanjut ke i=5
+continue; 
 }
 if (i === 8) {
 console.log(`Berhenti di angka ${i} (break)`);
-break; // hentikan loop di angka 8
+break; 
 }
 console.log(`Angka: ${i}`);
 }

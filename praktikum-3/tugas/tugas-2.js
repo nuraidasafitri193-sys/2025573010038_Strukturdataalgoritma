@@ -26,7 +26,7 @@ function cekPalindrom(str) {
 
 console.log("\n=== Uji Palindrom ===");
 
-const kata = ["ayam", "rumah", "kipas", "hai guyss"];
+const kata = ["kakak", "katak", "civic"];
 
 kata.forEach(k => {
   console.log(`${k} -> ${cekPalindrom(k) ? "Palindrom" : "Bukan Palindrom"}`);

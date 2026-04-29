@@ -67,7 +67,7 @@ class ProdukFisik extends Produk {
         const ongkir = beratKg * tarifPerKg;
         return ongkir;
     }
-}
+}2
 
 const ebook = new ProdukDigital(1, "Ebook JavaScript", 50000, 5, "PDF");
 const template = new ProdukDigital(2, "Template Website", 75000, 20, "ZIP");

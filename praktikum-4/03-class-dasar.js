@@ -41,11 +41,6 @@ console.log(mhs1.getInfo());
 console.log(mhs2.getInfo());
 console.log(mhs3.getInfo());
 
-
-// ====================
-// Static Method
-// ====================
-
 class Kalkulator {
     static tambah(a, b) { return a + b; }
     static kurang(a, b) { return a - b; }
@@ -62,11 +57,6 @@ console.log("10 + 5 =", Kalkulator.tambah(10, 5));
 console.log("10 - 5 =", Kalkulator.kurang(10, 5));
 console.log("10 * 5 =", Kalkulator.kali(10, 5));
 console.log("10 / 0 =", Kalkulator.bagi(10, 0));
-
-
-// ====================
-// Getter & Setter
-// ====================
 
 class Lingkaran {
     constructor(jarijari) {
@@ -100,11 +90,6 @@ console.log("Keliling:", L.keliling);
 
 L.jarijari = 10;
 console.log("Setelah diubah - Luas:", L.luas);
-
-
-// ====================
-// Class BankAccount
-// ====================
 
 console.log("\n=== Class BankAccount ===");
 
